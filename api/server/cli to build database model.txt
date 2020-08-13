@@ -1,0 +1,29 @@
+[]build: Post table
+npx sequelize-cli model:generate --name Post --attributes user_id:string,category_id:string,title:string,user_name:string,summary:text,content:text,status:enum:{true,false},slug:string
+
+[]build: tag table 
+npx sequelize-cli model:generate --name tag --attributes name:string
+
+[]build: postTag table
+npx sequelize-cli model:generate --name postTag --attributes post_id:string
+
+[]build: resource table
+npx sequelize-cli model:generate --name resource --attributes user_id:string,path:string,url:string,format:string,type:enum:{jpg,png,mp4,avi}
+
+[]build: post_comment table
+npx sequelize-cli model:generate --name post_comment --attributes user_id:string,post_id:string,name:string,title:string,content:text,image_path:string
+
+[]build: category table
+npx sequelize-cli model:generate --name category --attributes post_id:string,type:string,title:string,summary:string,content:text,image_path:string
+
+[]build: user table
+npx sequelize-cli model:generate --name user --attributes name:string,dob:date,gender:enum:{male,female},phone:string,slug:string,user_name:string,password:string,email:string,image_path:string,role_id:string
+
+[]build: role table
+npx sequelize-cli model:generate --name role --attributes name:string,description:string
+
+[]build: fb table
+npx sequelize-cli model:generate --name user_fb --attributes user_id:string,access_token:string,expried_at:date,user_name:string
+
+[]build: gg table
+npx sequelize-cli model:generate --name user_gg --attributes user_id:string,access_token:string,expried_at:date,user_name:string

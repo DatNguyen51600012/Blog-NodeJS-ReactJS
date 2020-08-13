@@ -1,0 +1,11 @@
+.post {
+    margin:20px auto;
+}
+
+.cardHeader{
+    text-align: left !important;
+}
+
+.postTitle{
+    text-transform: capitalize;
+}

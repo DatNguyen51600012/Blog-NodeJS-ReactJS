@@ -1,0 +1,26 @@
+.editorWrapper {
+    width: 80%;
+    min-height: 600px;
+    position: relative;
+    margin: 30px auto;
+}
+
+.writePostTitle {
+    margin-top: 20px;
+}
+
+.formControl {
+    min-width: 120px !important;
+}
+
+.postTitle{
+    width: 50% !important;
+    max-width: 70% !important;
+    text-transform: capitalize;
+    color:red;
+}
+.postDescription {
+    display: block;
+    max-width: 90% !important;
+    width: 70% !important;
+}
